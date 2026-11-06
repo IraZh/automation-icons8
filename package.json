@@ -1,0 +1,14 @@
+{
+  "name": "icons8-ui-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Базовый проект UI-автотестов для Icons8 на Playwright",
+  "scripts": {
+    "test": "playwright test --grep-invert @real-site",
+    "test:icons8": "playwright test --grep @real-site",
+    "test:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}
